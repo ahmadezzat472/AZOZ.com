@@ -1,705 +1,771 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>More Housing</title>
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
 
     <!-- Font Awesome Library -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css" />
 
     <!-- Main Template CSS File -->
-    <link rel="stylesheet" href="css/housing.css">
-</head>
-<body onload="yt()">
+    <link rel="stylesheet" href="css/housing.css" />
+  </head>
+  <body onload="yt()">
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="#" class="nav__logo">
-                    <img src="image/abc-removebg-preview.png" alt="website logo">
-                </a>
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav__logo">
+            <img src="image/abc-removebg-preview.png" alt="website logo" />
+          </a>
 
-                <div class="nav__bar">
-                    <div class="nav__menu">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#home" class="nav__link">
-                                    <i class="fa-solid fa-house"></i>
-                                    <span>home</span>
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#popular" class="nav__link">
-                                    <i class="fa-solid fa-hotel"></i>
-                                    <span>housing</span>
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#value" class="nav__link">
-                                    <i class="fa-solid fa-award"></i>
-                                    <span>value</span>
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#contact" class="nav__link">
-                                    <i class="fa-solid fa-phone-volume"></i>
-                                    <span>contact</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <i class="fa fa-moon dark-mode" id="dark-mode-btn"></i>
+          <div class="nav__bar">
+            <div class="nav__menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#home" class="nav__link">
+                    <i class="fa-solid fa-house"></i>
+                    <span>home</span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#popular" class="nav__link">
+                    <i class="fa-solid fa-hotel"></i>
+                    <span>housing</span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#value" class="nav__link">
+                    <i class="fa-solid fa-award"></i>
+                    <span>value</span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contact" class="nav__link">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>contact</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-                    <div id="loginplace"><a href="sign.html" id="namelink" class="btn nav__button">Subscribe</a></div>
-                    <div onclick="ahmed()" id="place"><a href="#" id="namelink1" class="btn nav__button">logout</a></div>
-                    <div id="profile1"><a style="text-decoration: none;" href="#" class="btn nav__button">profile</a></div>
+            <i class="fa fa-moon dark-mode" id="dark-mode-btn"></i>
 
-                </div>
-            </nav>
-        </div>
+            <div id="loginplace">
+              <a href="sign.html" id="namelink" class="btn nav__button"
+                >login</a
+              >
+            </div>
+            <div onclick="ahmed()" id="place">
+              <a href="#" id="namelink1" class="btn nav__button">logout</a>
+            </div>
+            <div id="profile1">
+              <a
+                style="text-decoration: none"
+                href="profile.html"
+                class="btn nav__button"
+                >profile</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
-    <br>
+    <!-- <br> -->
     <!-- -------------------------------------------------- -->
     <section class="otel">
-        <section class="Hotels">
-            <!-- -------------------------------------------------- -->
-            <header class="h">
-                <div class="container">
-                    <div class="info">
-                        <h1>Find your perfect Housing and compound on AZOZ.Com</h1>
-                        <p>we have everything from budget housing to luxury rooms</p>
-                        <form action="" class="home__search">
-                            <i class="fa-solid fa-igloo"></i>
-                            <input type="search" class="home__search-input" placeholder="Search By Location ...">
-                            <button class="home__search-btn btn">Search</button>
-                        </form>
-                    </div>
-                </div>
-            </header>
-            <div class="container">
-                <div class="links">
-                    <a href="index.html">Main</a>
-                    <a href="">Housing</a>
-                </div>
-                <h2>The best hotels available on our website in Egypt</h2>
-                <div class="all">
-                    <div class="card" id="hilton">
-                        <div class="imge">
-                            <a href="hilton.html"> <img src="image/hilton-hotel-cairo-3.jpg" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="hilton.html">hilton</a></h2>
-                                    <h3> <a href="hilton.html">Cairo</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>good</div>
-                                        <div>110 reviews</div>
-                                    </div>
-                                    <span>7.7</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Double room with garden view</div>
-                                    <div class="fixed2">2 single beds</div>
-                                    <div class="fixed3">Only one room left at this price on our website</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice"><del>779 EGP</del>660 EGP </div>
-                                    <div class="fixed">+EGP 99 taxes and fees</div>
-                                    <a href="hilton.html">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="aida">
-                        <div class="imge">
-                            <a href="Aida hotel.html"> <img src="image/twon.jpg" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="Aida hotel.html">aida</a></h2>
-                                    <h3> <a href="Aida hotel.html">Sharm El-Shaikh</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>good</div>
-                                        <div>178 reviews</div>
-                                    </div>
-                                    <span>7.9</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Standard Double or Twin Room</div>
-                                    <div class="fixed2">2 single beds</div>
-                                    <div class="fixed3">Only one room left at this price on our website</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice"> <del>500 EGP</del>442 EGP </div>
-                                    <div class="fixed">+EGP 108 taxes and fees</div>
-                                    <a href="aida.html">Show more...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="savoy">
-                        <div class="imge">
-                            <a href="savoy.html"> <img src="image/sidbad.jfif" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="savoy.html">savoy</a></h2>
-                                    <h3> <a href="savoy.html">Ain Sokhna</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>very good</div>
-                                        <div>200 reviews</div>
-                                    </div>
-                                    <span>8.2</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Double room with shared bathroom</div>
-                                    <div class="fixed2">1 bunk bed</div>
-                                    <div class="fixed3">Only 6 rooms left at this price on our website</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice">
-                                        <!--<del>500 EGP</del>-->901 EGP
-                                    </div>
-                                    <div class="fixed">+EGP 244 taxes and fees</div>
-                                    <a href="savoy.html">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="notival">
-                        <div class="imge">
-                            <a href="notival.html"> <img src="image/seven.jpg" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="notival.html">notival</a></h2>
-                                    <h3> <a href="notival.html">Hurghada</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>Wonderful</div>
-                                        <div>1,814 reviews</div>
-                                    </div>
-                                    <span>9.1</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Standard Double or Twin Room</div>
-                                    <div class="fixed2">Beds: one double or two singles</div>
-                                    <div class="fixed3">Only 4 rooms at this price on our website</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice">1,002 EGP </div>
-                                    <div class="fixed">+EGP 289 taxes and fees</div>
-                                    <a href="notival.html">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="elotel">
-                        <div class="imge">
-                            <a href="elotel.html"> <img src="image/value.jpg" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="elotel.html">el otel</a></h2>
-                                    <h3> <a href="elotel.html">Cairo</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>very good</div>
-                                        <div>280 reviews</div>
-                                    </div>
-                                    <span>8.5</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Deluxe Double or Twin Room</div>
-                                    <div class="fixed2">Beds: one double or two singles</div>
-                                    <div class="fixed3">Only 3 rooms left at this price on our website</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice"><del>890 EGP</del>750 EGP </div>
-                                    <div class="fixed">+EGP 260 taxes and fees</div>
-                                    <a href="elotel.html">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="border: none;" class="card" id="sindbad">
-                        <div class="imge">
-                            <a href="sindbad.html"> <img src="image/sunrise.jpg" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="sindbad.html">sindbad</a></h2>
-                                    <h3> <a href="sindbad.html">Marsa Matrouh</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>excellent</div>
-                                        <div>510 reviews</div>
-                                    </div>
-                                    <span>8.9</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Deluxe Double Room</div>
-                                    <div class="fixed2">2 single beds</div>
-                                    <div class="fixed3">Only 5 rooms left at this price on our website</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice"><del>1,100 EGP</del>999 EGP </div>
-                                    <div class="fixed">+EGP 300 taxes and fees</div>
-                                    <a href="sindbad.html">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="new">
-                        <div class="imge">
-                            <a href="new.html"> <img src="image/elotel.webp" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="new.html">New Pyramids Eyes Hotel</a></h2>
-                                    <h3> <a href="new.html">Giza,Cairo</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>very good</div>
-                                        <div>804 reviews</div>
-                                    </div>
-                                    <span>8.0</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Double or Twin Room with City View</div>
-                                    <div class="fixed2">Beds: one double or two singles</div>
-                                    <div class="fixed3">Only 4 rooms left at this price on our website</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice"><del>1,110 EGP</del>947 EGP </div>
-                                    <div class="fixed">+EGP 256 taxes and fees</div>
-                                    <a href="new.htmlee">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="seven">
-                        <div class="imge">
-                            <a href="seven.html"> <img src="image/269230602.jpg" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="seven.html">Seven Eleven Hotel</a></h2>
-                                    <h3> <a href="seven.html">Giza,Cairo</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>good</div>
-                                        <div>46 reviews</div>
-                                    </div>
-                                    <span>7.8</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Deluxe Queen Room</div>
-                                    <div class="fixed2">1 large double bed</div>
-                                    <div class="fixed3">Only 20 rooms left at this price on our website</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice"><del>526 EGP</del>474 EGP </div>
-                                    <div class="fixed">+EGP 71 taxes and fees</div>
-                                    <a href="seven.html">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="victory">
-                        <div class="imge">
-                            <a href="victory.html"> <img src="image/126b5e21-d3ff-4d45-a3eb-1bd9fd223700.jfif" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="victory.html">Victory Of Downtown Hotel</a></h2>
-                                    <h3> <a href="victory.html">Cairo</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>very good</div>
-                                        <div>597 reviews</div>
-                                    </div>
-                                    <span>8.5</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Deluxe Double or Twin Room</div>
-                                    <div class="fixed2">Beds: one double or two singles</div>
-                                    <div class="fixed3">Only three rooms left at this price on our website</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice"><del>1,065 EGP</del>532 EGP </div>
-                                    <div class="fixed">+EGP 80 taxes and fees</div>
-                                    <a href="victory.html">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="novotel">
-                        <div class="imge">
-                            <a href="novotel.html"> <img src="image/notival.jfif" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="novotel.html">Novotel Cairo Airport</a></h2>
-                                    <h3> <a href="novotel.html">Cairo</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>good</div>
-                                        <div>4,862 reviews</div>
-                                    </div>
-                                    <span>7.0</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Standard Double Room</div>
-                                    <div class="fixed2">1 single beds</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice">1,021 EGP </div>
-                                    <div class="fixed">+EGP 265 taxes and fees</div>
-                                    <a href="novotel.html">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="horus">
-                        <div class="imge">
-                            <a href="horus.html"> <img src="image/340600448.webp" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="horus.html">Horus Guest House</a></h2>
-                                    <h3> <a href="horus.html">Giza,Cairo</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>excellent</div>
-                                        <div>803 reviews</div>
-                                    </div>
-                                    <span>9.2</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Deluxe Triple Room</div>
-                                    <div class="fixed2">2 beds (1 single, 1 large double)</div>
-                                    <div class="fixed3">Only one room left at this price on our website</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice">464 EGP </div>
-                                    <div class="fixed">+EGP 121 taxes and fees</div>
-                                    <a href="horus.html">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="town">
-                        <div class="imge">
-                            <a href="town.html"> <img src="image/55.jfif" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="horus.html"> Town View Hotel</a></h2>
-                                    <h3> <a href="horus.html">Cairo</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>excellent</div>
-                                        <div>400 reviews</div>
-                                    </div>
-                                    <span>9.1</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Deluxe Double Room</div>
-                                    <div class="fixed2">2 single beds</div>
-                                    <div class="fixed3">Only five rooms left at this price on our website</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice"><del>390 EGP</del>351 EGP </div>
-                                    <div class="fixed">+EGP 53 taxes and fees</div>
-                                    <a href="horus.html">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="sun">
-                        <div class="imge">
-                            <a href="sun.html"> <img src="image/novital.jpg" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="sun.html"> Sunrise Arabian Beach Resort</a></h2>
-                                    <h3> <a href="sun.html">Sharm El-Shaikh</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>Wonderful</div>
-                                        <div>5,842 reviews</div>
-                                    </div>
-                                    <span>9.2</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Superior Room</div>
-                                    <div class="fixed2">Several types of beds</div>
-                                    <div class="fixed3">Breakfast included</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice">2,070 EGP </div>
-                                    <div class="fixed">+EGP 595 taxes and fees</div>
-                                    <a href="sun.html">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="apart">
-                        <div class="imge">
-                            <a href="apart.html"> <img src="image/hilton-hotel-cairo-3.jpg" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="apart.html">Apartments at Aldau Heights</a></h2>
-                                    <h3> <a href="apart.html">Hurghada</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>very good</div>
-                                        <div>308 reviews</div>
-                                    </div>
-                                    <span>8.0</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Studio with sea view</div>
-                                    <div class="fixed2">Fully own studio • 1 bathroom • 1 kitchen • 50m²</div>
-                                    <div class="fixed3">Only 1 left at this price on our website</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice"><del>752 EGP</del>692 EGP </div>
-                                    <div class="fixed">+EGP 356 taxes and fees</div>
-                                    <a href="apart.html">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="arabella">
-                        <div class="imge">
-                            <a href="arabella.html"> <img src="image/savoy.jfif" alt=""></a>
-                        </div>
-                        <div class="info">
-                            <div class="first">
-                                <div class="head">
-                                    <h2> <a href="arabella.html">Arabella Azure</a></h2>
-                                    <h3> <a href="arabella.html">Hurghada</a></h3>
-                                </div>
-                                <div class="support">
-                                    <div class="rev">
-                                        <div>very good</div>
-                                        <div>980 reviews</div>
-                                    </div>
-                                    <span>8.2</span>
-                                </div>
-                            </div>
-                            <div class="second">
-                                <div class="one">
-                                    <div class="fixed1">Standard Double or Twin Room</div>
-                                    <div class="fixed2">2 single beds</div>
-                                    <div class="fixed3">Only one room left at this price on our website</div>
-                                </div>
-                                <div class="two">
-                                    <div class="fixed">1 night, 2 adults</div>
-                                    <div class="praice"><del>2,000 EGP</del>1,300 EGP </div>
-                                    <div class="fixed">+EGP 289 taxes and fees</div>
-                                    <a href="arabella.html">Show more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section class="Hotels">
+        <!-- -------------------------------------------------- -->
+        <header class="h">
+          <div class="container">
+            <div class="info">
+              <h1>Find your perfect Housing and compound on AZOZ.Com</h1>
+              <p>we have everything from budget housing to luxury rooms</p>
+
+              
+              <div class="wheather">
+                <h2>Know the weather in the city before searching it</h2>
+                <a href="wheather.html">Press to Know</a>
+              </div>
             </div>
-        </section>
+              <form action="" class="home__search">
+                <i class="fa-solid fa-igloo"></i>
+                <input
+                  type="search"
+                  class="home__search-input"
+                  placeholder="Search By Location ..."
+                />
+                <button class="home__search-btn btn">Search</button>
+              </form>
+            </div>
+        </header>
+        <div class="container">
+        
+          <div class="links">
+            <a href="index.html">Main</a>
+            <a href="">Housing</a>
+          </div>
+          <h2>The best Houses and compounds available on our website in Egypt</h2>
+          <div class="all">
+            <div class="card" id="hilton">
+              <div class="imge">
+                <a href="hilton.html">
+                  <img src="image/hilton-hotel-cairo-3.jpg" alt=""
+                /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2><a href="hilton.html">hilton</a></h2>
+                    <h3><a href="hilton.html">Cairo</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>good</div>
+                      <div>110 reviews</div>
+                    </div>
+                    <span>7.7</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Double room with garden view</div>
+                    <div class="fixed2">2 single beds</div>
+                    <div class="fixed3">
+                      Only one room left at this price on our website
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice"><del>779 EGP</del>660 EGP</div>
+                    <div class="fixed">+EGP 99 taxes and fees</div>
+                    <a href="hilton.html">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="aida">
+              <div class="imge">
+                <a href="Aida hotel.html">
+                  <img src="image/twon.jpg" alt=""
+                /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2><a href="Aida hotel.html">aida</a></h2>
+                    <h3><a href="Aida hotel.html">Sharm El-Shaikh</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>good</div>
+                      <div>178 reviews</div>
+                    </div>
+                    <span>7.9</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Standard Double or Twin Room</div>
+                    <div class="fixed2">2 single beds</div>
+                    <div class="fixed3">
+                      Only one room left at this price on our website
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice"><del>500 EGP</del>442 EGP</div>
+                    <div class="fixed">+EGP 108 taxes and fees</div>
+                    <a href="aida.html">Show more...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="savoy">
+              <div class="imge">
+                <a href="savoy.html"> <img src="image/sidbad.jfif" alt="" /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2><a href="savoy.html">savoy</a></h2>
+                    <h3><a href="savoy.html">Ain Sokhna</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>very good</div>
+                      <div>200 reviews</div>
+                    </div>
+                    <span>8.2</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Double room with shared bathroom</div>
+                    <div class="fixed2">1 bunk bed</div>
+                    <div class="fixed3">
+                      Only 6 rooms left at this price on our website
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice"><!--<del>500 EGP</del>-->901 EGP</div>
+                    <div class="fixed">+EGP 244 taxes and fees</div>
+                    <a href="savoy.html">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="notival">
+              <div class="imge">
+                <a href="notival.html"> <img src="image/seven.jpg" alt="" /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2><a href="notival.html">notival</a></h2>
+                    <h3><a href="notival.html">Hurghada</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>Wonderful</div>
+                      <div>1,814 reviews</div>
+                    </div>
+                    <span>9.1</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Standard Double or Twin Room</div>
+                    <div class="fixed2">Beds: one double or two singles</div>
+                    <div class="fixed3">
+                      Only 4 rooms at this price on our website
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice">1,002 EGP</div>
+                    <div class="fixed">+EGP 289 taxes and fees</div>
+                    <a href="notival.html">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="elotel">
+              <div class="imge">
+                <a href="elotel.html"> <img src="image/value.jpg" alt="" /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2><a href="elotel.html">el otel</a></h2>
+                    <h3><a href="elotel.html">Cairo</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>very good</div>
+                      <div>280 reviews</div>
+                    </div>
+                    <span>8.5</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Deluxe Double or Twin Room</div>
+                    <div class="fixed2">Beds: one double or two singles</div>
+                    <div class="fixed3">
+                      Only 3 rooms left at this price on our website
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice"><del>890 EGP</del>750 EGP</div>
+                    <div class="fixed">+EGP 260 taxes and fees</div>
+                    <a href="elotel.html">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="border: none" class="card" id="sindbad">
+              <div class="imge">
+                <a href="sindbad.html">
+                  <img src="image/sunrise.jpg" alt=""
+                /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2><a href="sindbad.html">sindbad</a></h2>
+                    <h3><a href="sindbad.html">Marsa Matrouh</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>excellent</div>
+                      <div>510 reviews</div>
+                    </div>
+                    <span>8.9</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Deluxe Double Room</div>
+                    <div class="fixed2">2 single beds</div>
+                    <div class="fixed3">
+                      Only 5 rooms left at this price on our website
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice"><del>1,100 EGP</del>999 EGP</div>
+                    <div class="fixed">+EGP 300 taxes and fees</div>
+                    <a href="sindbad.html">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="new">
+              <div class="imge">
+                <a href="new.html"> <img src="image/elotel.webp" alt="" /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2><a href="new.html">New Pyramids Eyes Hotel</a></h2>
+                    <h3><a href="new.html">Giza,Cairo</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>very good</div>
+                      <div>804 reviews</div>
+                    </div>
+                    <span>8.0</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Double or Twin Room with City View</div>
+                    <div class="fixed2">Beds: one double or two singles</div>
+                    <div class="fixed3">
+                      Only 4 rooms left at this price on our website
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice"><del>1,110 EGP</del>947 EGP</div>
+                    <div class="fixed">+EGP 256 taxes and fees</div>
+                    <a href="new.htmlee">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="seven">
+              <div class="imge">
+                <a href="seven.html">
+                  <img src="image/269230602.jpg" alt=""
+                /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2><a href="seven.html">Seven Eleven Hotel</a></h2>
+                    <h3><a href="seven.html">Giza,Cairo</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>good</div>
+                      <div>46 reviews</div>
+                    </div>
+                    <span>7.8</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Deluxe Queen Room</div>
+                    <div class="fixed2">1 large double bed</div>
+                    <div class="fixed3">
+                      Only 20 rooms left at this price on our website
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice"><del>526 EGP</del>474 EGP</div>
+                    <div class="fixed">+EGP 71 taxes and fees</div>
+                    <a href="seven.html">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="victory">
+              <div class="imge">
+                <a href="victory.html">
+                  <img
+                    src="image/126b5e21-d3ff-4d45-a3eb-1bd9fd223700.jfif"
+                    alt=""
+                /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2>
+                      <a href="victory.html">Victory Of Downtown Hotel</a>
+                    </h2>
+                    <h3><a href="victory.html">Cairo</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>very good</div>
+                      <div>597 reviews</div>
+                    </div>
+                    <span>8.5</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Deluxe Double or Twin Room</div>
+                    <div class="fixed2">Beds: one double or two singles</div>
+                    <div class="fixed3">
+                      Only three rooms left at this price on our website
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice"><del>1,065 EGP</del>532 EGP</div>
+                    <div class="fixed">+EGP 80 taxes and fees</div>
+                    <a href="victory.html">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="novotel">
+              <div class="imge">
+                <a href="novotel.html">
+                  <img src="image/notival.jfif" alt=""
+                /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2><a href="novotel.html">Novotel Cairo Airport</a></h2>
+                    <h3><a href="novotel.html">Cairo</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>good</div>
+                      <div>4,862 reviews</div>
+                    </div>
+                    <span>7.0</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Standard Double Room</div>
+                    <div class="fixed2">1 single beds</div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice">1,021 EGP</div>
+                    <div class="fixed">+EGP 265 taxes and fees</div>
+                    <a href="novotel.html">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="horus">
+              <div class="imge">
+                <a href="horus.html">
+                  <img src="image/340600448.webp" alt=""
+                /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2><a href="horus.html">Horus Guest House</a></h2>
+                    <h3><a href="horus.html">Giza,Cairo</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>excellent</div>
+                      <div>803 reviews</div>
+                    </div>
+                    <span>9.2</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Deluxe Triple Room</div>
+                    <div class="fixed2">2 beds (1 single, 1 large double)</div>
+                    <div class="fixed3">
+                      Only one room left at this price on our website
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice">464 EGP</div>
+                    <div class="fixed">+EGP 121 taxes and fees</div>
+                    <a href="horus.html">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="town">
+              <div class="imge">
+                <a href="town.html"> <img src="image/55.jfif" alt="" /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2><a href="horus.html"> Town View Hotel</a></h2>
+                    <h3><a href="horus.html">Cairo</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>excellent</div>
+                      <div>400 reviews</div>
+                    </div>
+                    <span>9.1</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Deluxe Double Room</div>
+                    <div class="fixed2">2 single beds</div>
+                    <div class="fixed3">
+                      Only five rooms left at this price on our website
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice"><del>390 EGP</del>351 EGP</div>
+                    <div class="fixed">+EGP 53 taxes and fees</div>
+                    <a href="horus.html">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="sun">
+              <div class="imge">
+                <a href="sun.html"> <img src="image/novital.jpg" alt="" /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2>
+                      <a href="sun.html"> Sunrise Arabian Beach Resort</a>
+                    </h2>
+                    <h3><a href="sun.html">Sharm El-Shaikh</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>Wonderful</div>
+                      <div>5,842 reviews</div>
+                    </div>
+                    <span>9.2</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Superior Room</div>
+                    <div class="fixed2">Several types of beds</div>
+                    <div class="fixed3">Breakfast included</div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice">2,070 EGP</div>
+                    <div class="fixed">+EGP 595 taxes and fees</div>
+                    <a href="sun.html">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="apart">
+              <div class="imge">
+                <a href="apart.html">
+                  <img src="image/hilton-hotel-cairo-3.jpg" alt=""
+                /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2>
+                      <a href="apart.html">Apartments at Aldau Heights</a>
+                    </h2>
+                    <h3><a href="apart.html">Hurghada</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>very good</div>
+                      <div>308 reviews</div>
+                    </div>
+                    <span>8.0</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Studio with sea view</div>
+                    <div class="fixed2">
+                      Fully own studio • 1 bathroom • 1 kitchen • 50m²
+                    </div>
+                    <div class="fixed3">
+                      Only 1 left at this price on our website
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice"><del>752 EGP</del>692 EGP</div>
+                    <div class="fixed">+EGP 356 taxes and fees</div>
+                    <a href="apart.html">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="arabella">
+              <div class="imge">
+                <a href="arabella.html">
+                  <img src="image/savoy.jfif" alt=""
+                /></a>
+              </div>
+              <div class="info">
+                <div class="first">
+                  <div class="head">
+                    <h2><a href="arabella.html">Arabella Azure</a></h2>
+                    <h3><a href="arabella.html">Hurghada</a></h3>
+                  </div>
+                  <div class="support">
+                    <div class="rev">
+                      <div>very good</div>
+                      <div>980 reviews</div>
+                    </div>
+                    <span>8.2</span>
+                  </div>
+                </div>
+                <div class="second">
+                  <div class="one">
+                    <div class="fixed1">Standard Double or Twin Room</div>
+                    <div class="fixed2">2 single beds</div>
+                    <div class="fixed3">
+                      Only one room left at this price on our website
+                    </div>
+                  </div>
+                  <div class="two">
+                    <div class="fixed">1 night, 2 adults</div>
+                    <div class="praice"><del>2,000 EGP</del>1,300 EGP</div>
+                    <div class="fixed">+EGP 289 taxes and fees</div>
+                    <a href="arabella.html">Show more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
     <!-- -------------------------------------------------- -->
 
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
-        <div class="footer__container container grid">
-            <div>
-                <a href="#" class="footer__logo">
-                    <!-- <img src="image/Logo-removebg-preview.png" alt="website logo"> -->
-                    <h3>AZOZ</h3>
-                </a>
-                <p class="footer__description">
-                    Our vision is to make all people <br> 
-                    the best place to live for them.
-                </p>
-            </div>
-
-            <div class="footer__content">
-
-                <div>
-                    <h3 class="footer__title">
-                        About
-                    </h3>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Features</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">News & Blog</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Company
-                    </h3>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">How We Work?</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Capital</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Security</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Support
-                    </h3>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">FAQs</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Support center</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Follow us
-                    </h3>
-                    <ul class=".footer__social">
-                        <a href="#" class="footer__social-link">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="#" class="footer__social-link">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="#" class="footer__social-link">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </ul>
-                </div>
-            </div>
+      <div class="footer__container container grid">
+        <div style="padding-top: 7px">
+          <a href="#" class="footer__logo">
+            <img src="image/abc-removebg-preview.png" alt="website logo" />
+            <!-- <h3>AZOZ for Real State</h3> -->
+          </a>
+          <p class="footer__description">
+            Our vision is to make all people <br />
+            the best place to live for them.
+          </p>
         </div>
 
-        <div class="footer__info container">
-            <span class="footer__copy">
-                &#169; Bedimcode. All rigths reserved
-            </span>
+        <div class="footer__content">
+          <div>
+            <h3 class="footer__title">About</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Features</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">News & Blog</a>
+              </li>
+            </ul>
+          </div>
 
-            <div class="footer__privacy">
-                <a href="">Terms & Agreements</a>
-                <a href="">Privacy Policy</a>
-            </div>
+          <div>
+            <h3 class="footer__title">Company</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">How We Work?</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Capital</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Security</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Support</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Support center</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Follow us</h3>
+            <ul class=".footer__social">
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-pinterest"></i>
+              </a>
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </ul>
+          </div>
         </div>
+      </div>
 
+      <div class="footer__info container">
+        <span class="footer__copy">
+          &#169; Bedimcode. All rigths reserved
+        </span>
+
+        <div class="footer__privacy">
+          <a href="">Terms & Agreements</a>
+          <a href="">Privacy Policy</a>
+        </div>
+      </div>
     </footer>
 
-
-
-     <!--=============== SCROLLREVEAL ===============-->
+    <!--=============== SCROLLREVEAL ===============-->
     <script src="js/scrollreveal.min.js"></script>
 
     <!--========== SCROLL UP ==========-->
     <a href="#" class="scrollup" id="scrollup">
-        <!-- <i class="fa-solid fa-chevron-up"></i>
+      <!-- <i class="fa-solid fa-chevron-up"></i>
         <i class="fa-solid fa-chevron-up"></i> -->
-        <i class="fa-solid fa-check-double"></i>
+      <i class="fa-solid fa-check-double"></i>
     </a>
 
     <!--=============== SWIPER JS ===============-->
@@ -712,4 +778,5 @@
 
     <!-- Main JS File -->
     <script src="js/main.js"></script>
-</body>
+  </body>
+</html>

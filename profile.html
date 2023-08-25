@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--set meta tags-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Booking Hotels" />
+    <meta name="keywords" content="html css javascript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link css page-->
+    <link rel="stylesheet" href="css/main.css" />
+    <!--link profile css page-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Profile</title>
+    <style>
+      .card {
+        background: linear-gradient(
+          205deg,
+          #3f51b591 0%,
+          hsla(230.85deg 51.53% 45.52% / 0.2) 50%
+        );
+        width: 55%;
+        margin: auto;
+        border-radius: 15px;
+        padding: 20px 40px;
+        text-align: center;
+      }
+
+      .info {
+        text-align: center;
+        margin-bottom: 90px;
+      }
+
+      .card input {
+        display: inline-block;
+        width: 60%;
+        padding: 10px 25px;
+        border: 2px solid transparent;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+
+      .card span {
+        font-weight: bold;
+        color: white;
+      }
+
+      .card div {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .div {
+        padding: 150px 0;
+        background: linear-gradient(
+          45deg,
+          hsl(0deg 0% 0%) 0%,
+          hsl(0deg 0% 0% / 80%) 70%
+        );
+      }
+
+      @media screen and (max-width: 800px) {
+        .card {
+          width: 90%;
+        }
+
+        .card input {
+          display: inline-block;
+          width: 80%;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .card input {
+          width: 60%;
+          padding: 5px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body onload="profile() ,yt()">
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav__logo">
+            <img src="image/abc-removebg-preview.png" alt="website logo" />
+          </a>
+
+          <div class="nav__bar">
+            <div class="nav__menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#home" class="nav__link">
+                    <i class="fa-solid fa-house"></i>
+                    <span>home</span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#popular" class="nav__link">
+                    <i class="fa-solid fa-hotel"></i>
+                    <span>housing</span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#value" class="nav__link">
+                    <i class="fa-solid fa-award"></i>
+                    <span>value</span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contact" class="nav__link">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>contact</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <i class="fa fa-moon dark-mode" id="dark-mode-btn"></i>
+
+            <div id="loginplace">
+              <a href="sign.html" id="namelink" class="btn nav__button"
+                >login</a
+              >
+            </div>
+            <div onclick="ahmed()" id="place">
+              <a href="#" id="namelink1" class="btn nav__button">logout</a>
+            </div>
+            <div id="profile1">
+              <a
+                style="text-decoration: none"
+                href="profile.html"
+                class="btn nav__button"
+                >profile</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--end header-->
+
+    <!--start profile-->
+    <div class="div">
+      <section class="profile">
+        <div class="container">
+          <div class="card" id="card">
+            <h2 class="info" style="color: beige">information</h2>
+            <form action="">
+              <div>
+                <span>Kind</span> <input value="user" readonly type="text" />
+              </div>
+              <div>
+                <span>Name</span><input readonly type="text" id="usernam" />
+              </div>
+              <div>
+                <span>Email</span><input readonly type="email" id="email1" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--end profile-->
+
+    <!--start footer-->
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div style="padding-top: 7px">
+          <a href="index.html" class="footer__logo">
+            <img src="image/abc-removebg-preview.png" alt="website logo" />
+            <!-- <h3>AZOZ for Real State</h3> -->
+          </a>
+          <p class="footer__description">
+            Our vision is to make all people <br />
+            the best place to live for them.
+          </p>
+        </div>
+
+        <div class="footer__content">
+          <div>
+            <h3 class="footer__title">About</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Features</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">News & Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Company</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">How We Work?</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Capital</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Security</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Support</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Support center</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Follow us</h3>
+            <ul class=".footer__social">
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-pinterest"></i>
+              </a>
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__info container">
+        <span class="footer__copy">
+          &#169; Bedimcode. All rigths reserved
+        </span>
+
+        <div class="footer__privacy">
+          <a href="">Terms & Agreements</a>
+          <a href="">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+    <!--end footer-->
+    <script src="js/user.js"></script>
+
+    <!--=============== user js ===============-->
+    <script src="js/user.js"></script>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="js/scrollreveal.min.js"></script>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scrollup">
+      <!-- <i class="fa-solid fa-chevron-up"></i>
+        <i class="fa-solid fa-chevron-up"></i> -->
+      <i class="fa-solid fa-check-double"></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

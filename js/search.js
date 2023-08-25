@@ -1,37 +1,46 @@
 let input = document.querySelector(".home__search-input");
 let btn = document.querySelector(".home__search-btn");
-let allHotel = ["aida", "savoy", "notival", "hilton", "elotel", "sindbad","new", 
-               "seven", "victory", "novotel", "horus", "town", "sun", "apart", "arabella"]
+let allHotel = [
+  "aida",
+  "savoy",
+  "notival",
+  "hilton",
+  "elotel",
+  "sindbad",
+  "new",
+  "seven",
+  "victory",
+  "novotel",
+  "horus",
+  "town",
+  "sun",
+  "apart",
+  "arabella",
+];
 
-btn.onclick = function() {
-    let flag = 0;
-    allHotel.forEach(function(ele) {
-        if(input.value == ele) { flag = 1;}
-    })
-    if(flag == 1) {
-        allHotel.forEach(function(ele) {
-            document.getElementById(ele).style.display = "none";
-        })
-        document.getElementById(input.value).style.display = "flex";
-    } else {
-        alert("hotel not found");
+btn.onclick = function (ele) {
+  ele.preventDefault();
+  let flag = 0;
+  allHotel.forEach(function (ele) {
+    if (input.value == ele) {
+      flag = 1;
     }
-}
+  });
+  if (flag == 1) {
+    allHotel.forEach(function (ele) {
+      document.getElementById(ele).style.display = "none";
+    });
+    document.getElementById(input.value).style.display = "flex";
+  } else {
+    alert("hotel not found");
+  }
+};
 
-input.onfocus = function() {
-    allHotel.forEach(function(ele) {
-        document.getElementById(ele).style.display = "flex";
-    })
-}
-
-
-
-
-
-
-
-
-
+input.onfocus = function () {
+  allHotel.forEach(function (ele) {
+    document.getElementById(ele).style.display = "flex";
+  });
+};
 
 /*
 let input = document.getElementById("input");

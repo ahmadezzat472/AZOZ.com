@@ -1,601 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Final project</title>
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
 
     <!-- Render All Elements Normally -->
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
 
     <!-- Font Awesome Library -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css" />
 
     <!-- Google Fonts -->
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
     <!-- Main Template CSS File -->
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body onload="yt()">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body onload="yt()">
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="#" class="nav__logo">
-                    <img src="image/abc-removebg-preview.png" alt="website logo">
-                </a>
+      <div class="container">
+        <nav class="nav">
+          <a href="#" class="nav__logo">
+            <img src="image/abc-removebg-preview.png" alt="website logo" />
+          </a>
 
-                <div class="nav__bar">
-                    <div class="nav__menu">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#home" class="nav__link">
-                                    <i class="fa-solid fa-house"></i>
-                                    <span>home</span>
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#popular" class="nav__link">
-                                    <i class="fa-solid fa-hotel"></i>
-                                    <span>housing</span>
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#value" class="nav__link">
-                                    <i class="fa-solid fa-award"></i>
-                                    <span>value</span>
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#contact" class="nav__link">
-                                    <i class="fa-solid fa-phone-volume"></i>
-                                    <span>contact</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <i class="fa fa-moon dark-mode" id="dark-mode-btn"></i>
+          <div class="nav__bar">
+            <div class="nav__menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#home" class="nav__link">
+                    <i class="fa-solid fa-house"></i>
+                    <span>home</span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#popular" class="nav__link">
+                    <i class="fa-solid fa-hotel"></i>
+                    <span>housing</span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#value" class="nav__link">
+                    <i class="fa-solid fa-award"></i>
+                    <span>value</span>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contact" class="nav__link">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>contact</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-                    <div id="loginplace"><a href="sign.html" id="namelink" class="btn nav__button">login in</a></div>
-                    <div onclick="ahmed()" id="place"><a href="#" id="namelink1" class="btn nav__button">logout</a></div>
-                    <div id="profile1"><a style="text-decoration: none;" href="#" class="btn nav__button">profile</a></div>
+            <i class="fa fa-moon dark-mode" id="dark-mode-btn"></i>
 
-                </div>
-            </nav>
-        </div>
+            <div id="loginplace">
+              <a href="sign.html" id="namelink" class="btn nav__button"
+                >login</a
+              >
+            </div>
+            <div onclick="ahmed()" id="place">
+              <a href="#" id="namelink1" class="btn nav__button">logout</a>
+            </div>
+            <div id="profile1">
+              <a
+                style="text-decoration: none"
+                href="profile.html"
+                class="btn nav__button"
+                >profile</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="container home__container">
+          <div class="home__data">
+            <h1 class="home__title">
+              Discover <br />
+              Most Suitable <br />
+              Property
+            </h1>
 
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="container home__container">
-                <div class="home__data">
+            <p class="home__description">
+              Find a variety of properties that suit you very easily, forget all
+              difficulties in finding a residence for you
+            </p>
 
-                    <h1 class="home__title">
-                        Discover <br> Most Suitable <br> Property
-                    </h1>
+            <form action="" class="home__search">
+              <i class="fa-solid fa-location-dot"></i>
+              <input
+                type="search"
+                class="home__search-input"
+                placeholder="Search By Location ..."
+              />
+              <button class="btn">Search</button>
+            </form>
 
-                    <p class="home__description">
-                        Find a variety of properties that suit you very easily, 
-                        forget all difficulties in finding a residence for you
-                    </p>
-
-                    <form action="" class="home__search">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <input type="search" class="home__search-input" placeholder="Search By Location ...">
-                        <button class="btn">Search</button>
-                    </form>
-
-                    <div class="home__value">
-                        <div>
-                            <h1 class="home__value-number">
-                                9K <span>+</span>
-                            </h1>
-                            <p class="home__value-description">
-                                Premium <br> Product
-                            </p>
-                        </div>
-                        <div>
-                            <h1 class="home__value-number">
-                                2K <span>+</span>
-                            </h1>
-                            <p class="home__value-description">
-                                Happy <br> Customer
-                            </p>
-                        </div>
-                        <div>
-                            <h1 class="home__value-number">
-                                28K <span>+</span>
-                            </h1>
-                            <p class="home__value-description">
-                                Awards <br> Winning
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="home__image">
-                    <div class="home__image-box"></div>
-                    <div class="home__image-img">
-                        <img src="image/home.jpg" alt="Build-Home">
-                    </div>
-                </div>
+            <div class="home__value">
+              <div>
+                <h1 class="home__value-number">9K <span>+</span></h1>
+                <p class="home__value-description">
+                  Premium <br />
+                  Product
+                </p>
+              </div>
+              <div>
+                <h1 class="home__value-number">2K <span>+</span></h1>
+                <p class="home__value-description">
+                  Happy <br />
+                  Customer
+                </p>
+              </div>
+              <div>
+                <h1 class="home__value-number">28K <span>+</span></h1>
+                <p class="home__value-description">
+                  Awards <br />
+                  Winning
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!--==================== LOGOS ====================-->
-        <section class="logos section">
-            <div class="container logos__container">
-                <div class="logos__img">
-                    <img src="image/logo1.png" alt="">
-                </div>
-                <div class="logos__img">
-                    <img src="image/logo2.png" alt="">
-                </div>
-                <div class="logos__img">
-                    <img src="image/logo3.png" alt="">
-                </div>
-                <div class="logos__img">
-                    <img src="image/logo4.png" alt="">
-                </div>
+          <div class="home__image">
+            <div class="home__image-box"></div>
+            <div class="home__image-img">
+              <img src="image/home.jpg" alt="Build-Home" />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!--==================== POPULAR ====================-->
-        <section class="section popular" id="popular">
-            <div class="container">
-                <span class="section__subtitle">Best Choise</span>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <h2 class="section__title">Popular Housing<span>.</span></h2>
-                    <h3 style="margin-bottom: 16px;"><a href="housing.html">SEE MORE</a></h3>
+      <!--==================== LOGOS ====================-->
+      <section class="logos section">
+        <div class="container logos__container">
+          <div class="logos__img">
+            <img src="image/logo1.png" alt="" />
+          </div>
+          <div class="logos__img">
+            <img src="image/logo2.png" alt="" />
+          </div>
+          <div class="logos__img">
+            <img src="image/logo3.png" alt="" />
+          </div>
+          <div class="logos__img">
+            <img src="image/logo4.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== POPULAR ====================-->
+      <section class="section popular" id="popular">
+        <div class="container">
+          <span class="section__subtitle">Best Choise</span>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h2 class="section__title">Popular Housing<span>.</span></h2>
+            <h3 style="margin-bottom: 16px">
+              <a href="housing.html">SEE MORE</a>
+            </h3>
+          </div>
+
+          <div class="popular__container swiper">
+            <div class="swiper-wrapper">
+              <article class="popular__card swiper-slide" style="width: 300px">
+                <img
+                  src="image/popular1.jpg"
+                  alt="Housing"
+                  class="popular__img"
+                />
+
+                <div class="popular__data">
+                  <h2 class="popular__price">$66,356</h2>
+                  <h3 class="popular__title">Garden City Assat</h3>
+                  <p class="popular__description">
+                    Street The Garden City Of Miraflores, Lima - Perú Av. Sol
+                    #9876
+                  </p>
                 </div>
+              </article>
 
-                <div class="popular__container swiper">
-                    <div class="swiper-wrapper"> 
-                        <article class="popular__card swiper-slide" style="width: 300px;">
-                            <img src="image/popular1.jpg" alt="Housing" class="popular__img">
+              <article class="popular__card swiper-slide">
+                <img
+                  src="image/popular2.jpg"
+                  alt="Housing"
+                  class="popular__img"
+                />
 
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    $66,356
-                                </h2>
-                                <h3 class="popular__title">
-                                    Garden City Assat
-                                </h3>
-                                <p class="popular__description">
-                                    Street The Garden City Of Miraflores, Lima - Perú Av. Sol #9876
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="image/popular2.jpg" alt="Housing" class="popular__img">
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    $35,159
-                                </h2>
-                                <h3 class="popular__title">
-                                    Gables Luxurious House
-                                </h3>
-                                <p class="popular__description">
-                                    304 East 42nd Street, New York, New York, USA, 10017 #9876
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="image/popular5.jpg" alt="Housing" class="popular__img">
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    $75,043
-                                </h2>
-                                <h3 class="popular__title">
-                                    Garden Orchard City
-                                </h3>
-                                <p class="popular__description">
-                                    3046 Fritz Spur Suite 322 Herzoghaven, MI 79526-8878
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="image/popular3.jpg" alt="Housing" class="popular__img">
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    $62,024
-                                </h2>
-                                <h3 class="popular__title">
-                                    Luxurious City Garden
-                                </h3>
-                                <p class="popular__description">
-                                    Gateway Center - Raymond Blvd - Newark, New Jersey, USA,
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="image/popular4.jpg" alt="Housing" class="popular__img">
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    $47,043
-                                </h2>
-                                <h3 class="popular__title">
-                                    Aliva Private Garden
-                                </h3>
-                                <p class="popular__description">
-                                    Ain-Shams -- cairo -- 17 el firoz
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <img src="image/popular5.jpg" alt="Housing" class="popular__img">
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    $66,356
-                                </h2>
-                                <h3 class="popular__title">
-                                    Garden City Assat
-                                </h3>
-                                <p class="popular__description">
-                                    Street The Garden City Of Miraflores, Lima - Perú Av. Sol #9876
-                                </p>
-                            </div>
-                        </article>
-
-                    </div>
-                    <div class="swiper-button-next">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </div>
+                <div class="popular__data">
+                  <h2 class="popular__price">$35,159</h2>
+                  <h3 class="popular__title">Gables Luxurious House</h3>
+                  <p class="popular__description">
+                    304 East 42nd Street, New York, New York, USA, 10017 #9876
+                  </p>
                 </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="image/popular5.jpg"
+                  alt="Housing"
+                  class="popular__img"
+                />
+
+                <div class="popular__data">
+                  <h2 class="popular__price">$75,043</h2>
+                  <h3 class="popular__title">Garden Orchard City</h3>
+                  <p class="popular__description">
+                    3046 Fritz Spur Suite 322 Herzoghaven, MI 79526-8878
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="image/popular3.jpg"
+                  alt="Housing"
+                  class="popular__img"
+                />
+
+                <div class="popular__data">
+                  <h2 class="popular__price">$62,024</h2>
+                  <h3 class="popular__title">Luxurious City Garden</h3>
+                  <p class="popular__description">
+                    Gateway Center - Raymond Blvd - Newark, New Jersey, USA,
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="image/popular4.jpg"
+                  alt="Housing"
+                  class="popular__img"
+                />
+
+                <div class="popular__data">
+                  <h2 class="popular__price">$47,043</h2>
+                  <h3 class="popular__title">Aliva Private Garden</h3>
+                  <p class="popular__description">
+                    Ain-Shams -- cairo -- 17 el firoz
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="image/popular5.jpg"
+                  alt="Housing"
+                  class="popular__img"
+                />
+
+                <div class="popular__data">
+                  <h2 class="popular__price">$66,356</h2>
+                  <h3 class="popular__title">Garden City Assat</h3>
+                  <p class="popular__description">
+                    Street The Garden City Of Miraflores, Lima - Perú Av. Sol
+                    #9876
+                  </p>
+                </div>
+              </article>
             </div>
-        </section>
-
-        <!--==================== VALUE ====================-->
-        <section class="value section" id="value">
-            <div class="value__container container grid">
-                <div class="value__images">
-                    <div class="value__image-box"></div>
-
-                    <div class="value__image-img">
-                        <img src="image/value.jpg" alt="Build-Home">
-                    </div>
-                </div>
-
-                <div class="value__content">
-                    <div class="value__data">
-                        <span class="section__subtitle">Our Value</span>
-                        <h2 class="section__title">Value We Give To You<span>.</span></h2>
-                        <p class="value__description">
-                            We always ready to help by providing the best service for you. 
-                            We believe a good place to live can make your life better.
-                        </p>
-                    </div>
-
-                    <div class="value__dropdowns">
-
-                        <div class="value__dropdowns-item">
-                            <header class="value__dropdowns-header">
-                                <i class="fa-solid fa-shield-virus value__dropdowns-icon"></i>
-                                <h3 class="value__dropdowns-title">
-                                    Best interest rates on the market
-                                </h3>
-                                <div class="value__dropdowns-arrow">
-                                    <i class="fa-solid fa-caret-down"></i>
-                                </div>
-                            </header>
-
-                            <div class="value__dropdowns-content">
-                                <p class="value__dropdowns-description">
-                                    Price we provides is the best for you, 
-                                    we guarantee no price changes on your property due 
-                                    to various unexpected costs that may come.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="value__dropdowns-item">
-                            <header class="value__dropdowns-header">
-                                <i class="fa-solid fa-shield-virus value__dropdowns-icon"></i>
-                                <h3 class="value__dropdowns-title">
-                                    Prevent unstable prices
-                                </h3>
-                                <div class="value__dropdowns-arrow">
-                                    <i class="fa-solid fa-caret-down"></i>
-                                </div>
-                            </header>
-
-                            <div class="value__dropdowns-content">
-                                <p class="value__dropdowns-description">
-                                    Price we provides is the best for you, 
-                                    we guarantee no price changes on your property due 
-                                    to various unexpected costs that may come.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="value__dropdowns-item">
-                            <header class="value__dropdowns-header">
-                                <i class="fa-solid fa-shield-virus value__dropdowns-icon"></i>
-                                <h3 class="value__dropdowns-title">
-                                    Best prices on the market 
-                                </h3>
-                                <div class="value__dropdowns-arrow">
-                                    <i class="fa-solid fa-caret-down"></i>
-                                </div>
-                            </header>
-
-                            <div class="value__dropdowns-content">
-                                <p class="value__dropdowns-description">
-                                    Price we provides is the best for you, 
-                                    we guarantee no price changes on your property due 
-                                    to various unexpected costs that may come.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="value__dropdowns-item">
-                            <header class="value__dropdowns-header">
-                                <i class="fa-solid fa-shield-virus value__dropdowns-icon"></i>
-                                <h3 class="value__dropdowns-title">
-                                    Security of your data
-                                </h3>
-                                <div class="value__dropdowns-arrow">
-                                    <i class="fa-solid fa-caret-down"></i>
-                                </div>
-                            </header>
-
-                            <div class="value__dropdowns-content">
-                                <p class="value__dropdowns-description">
-                                    Price we provides is the best for you, 
-                                    we guarantee no price changes on your property due 
-                                    to various unexpected costs that may come.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-chevron-right"></i>
             </div>
-        </section>
-
-        <!--==================== CONTACT ====================-->
-        <section class="contact section" id="contact">
-            <div class="container contact__container grid">
-
-                <div class="contact__images">
-                    <div class="contact__image-box"></div>
-
-                    <div class="contact__image-img">
-                        <img src="image/contact.png" alt="Build-Home">
-                    </div>
-                </div>
-
-                <div class="contact__content">
-                    <div class="contact__data">
-                        <span class="section__subtitle">Contact Us</span>
-                        <h2 class="section__title">Easy to Contact us<span>.</span></h2>
-                        <p class="contact__description">
-                            Is there a problem finding your dream home? Need a 
-                            guide in buying first home? or need a consultation 
-                            on residential issues? just contact us.
-                        </p>
-                    </div>
-
-                    <div class="contact__card">
-
-                        <div class="contact__card-box">
-                            <div class="contact__card-info">
-    
-                                <i class="fa-solid fa-phone"></i>
-    
-                                <div>
-                                    <h3 class="contact__card-title">
-                                        Call
-                                    </h3>
-                                    <p class="contact__card-description">
-                                        022.321.165.19
-                                    </p>
-                                </div>
-    
-                            </div>
-                            <button class="btn contact__card-button">
-                                Call Now
-                            </button>
-                        </div>
-    
-                        <div class="contact__card-box">
-                            <div class="contact__card-info">
-                                <i class="fa-regular fa-comment"></i>
-                            <div>
-                                    <h3 class="contact__card-title">
-                                        Chat
-                                    </h3>
-                                    <p class="contact__card-description">
-                                        022.321.165.19
-                                    </p>
-                                </div>
-                            </div>
-                            <button class="btn contact__card-button">
-                                Chat Now
-                            </button>
-                        </div>
-    
-                        <div class="contact__card-box">
-                            <div class="contact__card-info">
-                                <i class="fa-solid fa-video"></i>
-                                <div>
-                                    <h3 class="contact__card-title">
-                                        Video Call
-                                    </h3>
-                                    <p class="contact__card-description">
-                                        022.321.165.19
-                                    </p>
-                                </div>
-                            </div>
-                            <button class="btn contact__card-button">
-                                Video Call Now
-                            </button>
-                        </div>
-    
-                        <div class="contact__card-box">
-                            <div class="contact__card-info">
-                                <i class="fa-regular fa-message"></i>
-                                <div>
-                                    <h3 class="contact__card-title">
-                                        Message
-                                    </h3>
-                                    <p class="contact__card-description">
-                                        022.321.165.19
-                                    </p>
-                                </div>
-                            </div>
-                            <button class="btn contact__card-button">
-                                Message Now
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-chevron-left"></i>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!--==================== SUBSCRIBE ====================-->
-        <section class="subscribe section">
-            <div class="container">
-                <div class="subscribe__container">
-                    <h1 class="subscribe__title">
-                        Get Started with AZOZ
-                    </h1>
-                    <p class="subscribe__description">
-                        Subscribe and find super attractive price
-                        quotes from us, Find your residence soon
-                    </p>
-                    <a href="sign.html" class="btn subscribe__button">
-                        Get Started
-                    </a>
-                </div>
+      <!--==================== VALUE ====================-->
+      <section class="value section" id="value">
+        <div class="value__container container grid">
+          <div class="value__images">
+            <div class="value__image-box"></div>
+
+            <div class="value__image-img">
+              <img src="image/value.jpg" alt="Build-Home" />
             </div>
-        </section>
+          </div>
+
+          <div class="value__content">
+            <div class="value__data">
+              <span class="section__subtitle">Our Value</span>
+              <h2 class="section__title">Value We Give To You<span>.</span></h2>
+              <p class="value__description">
+                We always ready to help by providing the best service for you.
+                We believe a good place to live can make your life better.
+              </p>
+            </div>
+
+            <div class="value__dropdowns">
+              <div class="value__dropdowns-item">
+                <header class="value__dropdowns-header">
+                  <i class="fa-solid fa-shield-virus value__dropdowns-icon"></i>
+                  <h3 class="value__dropdowns-title">
+                    Best interest rates on the market
+                  </h3>
+                  <div class="value__dropdowns-arrow">
+                    <i class="fa-solid fa-caret-down"></i>
+                  </div>
+                </header>
+
+                <div class="value__dropdowns-content">
+                  <p class="value__dropdowns-description">
+                    Price we provides is the best for you, we guarantee no price
+                    changes on your property due to various unexpected costs
+                    that may come.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value__dropdowns-item">
+                <header class="value__dropdowns-header">
+                  <i class="fa-solid fa-shield-virus value__dropdowns-icon"></i>
+                  <h3 class="value__dropdowns-title">
+                    Prevent unstable prices
+                  </h3>
+                  <div class="value__dropdowns-arrow">
+                    <i class="fa-solid fa-caret-down"></i>
+                  </div>
+                </header>
+
+                <div class="value__dropdowns-content">
+                  <p class="value__dropdowns-description">
+                    Price we provides is the best for you, we guarantee no price
+                    changes on your property due to various unexpected costs
+                    that may come.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value__dropdowns-item">
+                <header class="value__dropdowns-header">
+                  <i class="fa-solid fa-shield-virus value__dropdowns-icon"></i>
+                  <h3 class="value__dropdowns-title">
+                    Best prices on the market
+                  </h3>
+                  <div class="value__dropdowns-arrow">
+                    <i class="fa-solid fa-caret-down"></i>
+                  </div>
+                </header>
+
+                <div class="value__dropdowns-content">
+                  <p class="value__dropdowns-description">
+                    Price we provides is the best for you, we guarantee no price
+                    changes on your property due to various unexpected costs
+                    that may come.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value__dropdowns-item">
+                <header class="value__dropdowns-header">
+                  <i class="fa-solid fa-shield-virus value__dropdowns-icon"></i>
+                  <h3 class="value__dropdowns-title">Security of your data</h3>
+                  <div class="value__dropdowns-arrow">
+                    <i class="fa-solid fa-caret-down"></i>
+                  </div>
+                </header>
+
+                <div class="value__dropdowns-content">
+                  <p class="value__dropdowns-description">
+                    Price we provides is the best for you, we guarantee no price
+                    changes on your property due to various unexpected costs
+                    that may come.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="container contact__container grid">
+          <div class="contact__images">
+            <div class="contact__image-box"></div>
+
+            <div class="contact__image-img">
+              <img src="image/contact.png" alt="Build-Home" />
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <div class="contact__data">
+              <span class="section__subtitle">Contact Us</span>
+              <h2 class="section__title">Easy to Contact us<span>.</span></h2>
+              <p class="contact__description">
+                Is there a problem finding your dream home? Need a guide in
+                buying first home? or need a consultation on residential issues?
+                just contact us.
+              </p>
+            </div>
+
+            <div class="contact__card">
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="fa-solid fa-phone"></i>
+
+                  <div>
+                    <h3 class="contact__card-title">Call</h3>
+                    <p class="contact__card-description">022.321.165.19</p>
+                  </div>
+                </div>
+                <button class="btn contact__card-button">Call Now</button>
+              </div>
+
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="fa-regular fa-comment"></i>
+                  <div>
+                    <h3 class="contact__card-title">Chat</h3>
+                    <p class="contact__card-description">022.321.165.19</p>
+                  </div>
+                </div>
+                <button class="btn contact__card-button">Chat Now</button>
+              </div>
+
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="fa-solid fa-video"></i>
+                  <div>
+                    <h3 class="contact__card-title">Video Call</h3>
+                    <p class="contact__card-description">022.321.165.19</p>
+                  </div>
+                </div>
+                <button class="btn contact__card-button">Video Call Now</button>
+              </div>
+
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="fa-regular fa-message"></i>
+                  <div>
+                    <h3 class="contact__card-title">Message</h3>
+                    <p class="contact__card-description">022.321.165.19</p>
+                  </div>
+                </div>
+                <button class="btn contact__card-button">Message Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SUBSCRIBE ====================-->
+      <section class="subscribe section">
+        <div class="container">
+          <div class="subscribe__container">
+            <h1 class="subscribe__title">Get Started with AZOZ</h1>
+            <p class="subscribe__description">
+              Subscribe and find super attractive price quotes from us, Find
+              your residence soon
+            </p>
+            <a href="sign.html" class="btn subscribe__button"> Get Started </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
-        <div class="footer__container container grid">
-            <div style="padding-top: 7px;">
-                <a href="#" class="footer__logo">
-                    <img src="image/abc-removebg-preview.png" alt="website logo">
-                    <!-- <h3>AZOZ for Real State</h3> -->
-                </a>
-                <p class="footer__description">
-                    Our vision is to make all people <br> 
-                    the best place to live for them.
-                </p>
-            </div>
-
-            <div class="footer__content">
-
-                <div>
-                    <h3 class="footer__title">
-                        About
-                    </h3>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Features</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">News & Blog</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Company
-                    </h3>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">How We Work?</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Capital</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Security</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Support
-                    </h3>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">FAQs</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Support center</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Follow us
-                    </h3>
-                    <ul class=".footer__social">
-                        <a href="#" class="footer__social-link">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="#" class="footer__social-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#" class="footer__social-link">
-                            <i class="fa-brands fa-pinterest"></i>
-                        </a>
-                        <a href="#" class="footer__social-link">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </ul>
-                </div>
-            </div>
+      <div class="footer__container container grid">
+        <div style="padding-top: 7px">
+          <a href="index.html" class="footer__logo">
+            <img src="image/abc-removebg-preview.png" alt="website logo" />
+          </a>
+          <p class="footer__description">
+            Our vision is to make all people <br />
+            the best place to live for them.
+          </p>
         </div>
 
-        <div class="footer__info container">
-            <span class="footer__copy">
-                &#169; Bedimcode. All rigths reserved
-            </span>
+        <div class="footer__content">
+          <div>
+            <h3 class="footer__title">About</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Features</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">News & Blog</a>
+              </li>
+            </ul>
+          </div>
 
-            <div class="footer__privacy">
-                <a href="">Terms & Agreements</a>
-                <a href="">Privacy Policy</a>
-            </div>
+          <div>
+            <h3 class="footer__title">Company</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">How We Work?</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Capital</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Security</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Support</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Support center</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Follow us</h3>
+            <ul class=".footer__social">
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-pinterest"></i>
+              </a>
+              <a href="#" class="footer__social-link">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </ul>
+          </div>
         </div>
+      </div>
 
+      <div class="footer__info container">
+        <span class="footer__copy">
+          &#169; Bedimcode. All rigths reserved
+        </span>
+
+        <div class="footer__privacy">
+          <a href="">Terms & Agreements</a>
+          <a href="">Privacy Policy</a>
+        </div>
+      </div>
     </footer>
 
     <!--=============== user js ===============-->
@@ -606,9 +582,9 @@
 
     <!--========== SCROLL UP ==========-->
     <a href="#" class="scrollup" id="scrollup">
-        <!-- <i class="fa-solid fa-chevron-up"></i>
+      <!-- <i class="fa-solid fa-chevron-up"></i>
         <i class="fa-solid fa-chevron-up"></i> -->
-        <i class="fa-solid fa-check-double"></i>
+      <i class="fa-solid fa-check-double"></i>
     </a>
 
     <!--=============== SWIPER JS ===============-->
@@ -616,5 +592,5 @@
 
     <!-- Main JS File -->
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

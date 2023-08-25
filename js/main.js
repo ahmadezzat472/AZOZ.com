@@ -98,53 +98,58 @@ up.onclick = function () {
 };
 
 /*=============== DARK LIGHT THEME ===============*/
-const themeButton = document.getElementById('dark-mode-btn');
-const darkTheme = 'dark-theme';
-const iconTheme = 'fa-sun';
+const themeButton = document.getElementById("dark-mode-btn");
+const darkTheme = "dark-theme";
+const iconTheme = "fa-sun";
 
 // before user selected topic
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
 
-// We obtain the current theme that the interface has by validating the dark-theme class 
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'fa fa-moon': 'fa fa-sun';
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? "fa fa-moon" : "fa fa-sun";
 
 //We validate if the user previously chose a topic
 if (selectedTheme) {
-    // If the validation is fulfilled, we ask what the issue was to know if we activated or de 
-    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
-    console.log(selectedIcon);
-    themeButton.classList[selectedIcon !== 'fa fa-moon' ? 'add' : 'remove'](iconTheme);
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or de
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  console.log(selectedIcon);
+  themeButton.classList[selectedIcon !== "fa fa-moon" ? "add" : "remove"](
+    iconTheme
+  );
 }
 
-// Activate / deactivate the theme manually with the button 
-themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme 
-    document.body.classList.toggle(darkTheme);
-    themeButton.classList.toggle(iconTheme);
-    // themeButton.classList.add('fa-solid') = 'fa-solid ' + iconTheme +' dark-mode';
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener("click", () => {
+  // Add or remove the dark / icon theme
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  // themeButton.classList.add('fa-solid') = 'fa-solid ' + iconTheme +' dark-mode';
 
-    // We save the theme and the current icon that the user chose 
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-
-})
+  // We save the theme and the current icon that the user chose
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
-  origin: 'top',
-  distance: '60px',
-  duration: 2500,
+  origin: "top",
+  distance: "60px",
+  duration: 2000,
   delay: 400,
   // reset: true
-})
-  
-sr.reveal('.home_title, .popular__container, .subscribe__container')
-sr.reveal('.home__description', {delay: 500})
-sr.reveal('.home__search', {delay: 600})
-sr.reveal('.home__value', {delay: 700})
-sr.reveal ('.home__image, .footer__container', {delay: 800, origin: 'bottom'})
-sr.reveal('.logos__img', {interval: 100})
-sr.reveal ('.value__images, .contact__content', {delay: 800, origin: 'left'})
-sr.reveal ('.value__content, .contact__images', {delay: 800, origin: 'right'})
+});
+
+sr.reveal(".home_title, .popular__container, .subscribe__container");
+sr.reveal(".home__description", { delay: 500 });
+sr.reveal(".home__search", { delay: 600 });
+sr.reveal(".home__value", { delay: 700 });
+sr.reveal(".home__image, .footer__container", { delay: 700, origin: "bottom" });
+sr.reveal(".logos__img", { interval: 100 });
+sr.reveal(".value__images, .contact__content", { delay: 600, origin: "left" });
+sr.reveal(".value__content, .contact__images", { delay: 600, origin: "right" });

@@ -32,7 +32,8 @@ function yt() {
   temp = JSON.parse(localStorage.user_login);
   for (b = 0; b < data.length; b++) {
     if (temp.email === data[b].email && temp.Password == data[b].password) {
-      document.getElementById("loginplace").style.display ="none"; /* sign in */
+      document.getElementById("loginplace").style.display =
+        "none"; /* sign in */
       document.getElementById("profile1").style.display = "block"; /* profile */
       document.getElementById("place").style.display = "block"; /* log out */
       break;
